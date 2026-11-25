@@ -1,0 +1,531 @@
+/* ==============================
+   GENERAL STYLING
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1F2937;
+    background-color: #F7FAFC;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+section {
+    padding: 60px 8%;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ==============================
+   HEADER
+================================= */
+
+header {
+    background: linear-gradient(135deg, #0B1F3A, #1565C0);
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+    color: #E0F2FE;
+}
+
+
+/* ==============================
+   NAVIGATION
+================================= */
+
+nav {
+    background-color: #071A2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #00A6D6;
+    color: white;
+}
+
+
+/* ==============================
+   HERO SECTION
+================================= */
+
+.hero {
+    width: 100%;
+    height: 450px;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ==============================
+   ABOUT SECTION
+================================= */
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: white;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(11, 31, 58, 0.15);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    color: #0B1F3A;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #4B5563;
+}
+
+.about-content ul {
+    padding-left: 20px;
+}
+
+.about-content li {
+    margin: 8px 0;
+}
+
+
+/* ==============================
+   PROGRAMS SECTION
+================================= */
+
+.programs {
+    background-color: #F3F8FD;
+    text-align: center;
+}
+
+.programs h2,
+.faculty h2,
+.laboratories h2,
+.contact h2 {
+    color: #0B1F3A;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.program-card {
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    border-top: 4px solid #1565C0;
+    box-shadow: 0 5px 15px rgba(11, 31, 58, 0.10);
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+    border-top-color: #00A6D6;
+    box-shadow: 0 12px 30px rgba(11, 31, 58, 0.15);
+}
+
+.program-card h3 {
+    color: #1565C0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.program-card p {
+    color: #64748B;
+}
+
+
+/* ==============================
+   FACULTY SECTION
+================================= */
+
+.faculty {
+    background-color: white;
+    text-align: center;
+}
+
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.faculty-card {
+    background-color: #F1F5F9;
+    padding: 25px 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(11, 31, 58, 0.08);
+    transition: 0.3s;
+}
+
+.faculty-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(11, 31, 58, 0.15);
+}
+
+.faculty-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #1565C0;
+    margin-bottom: 15px;
+}
+
+.faculty-card h3 {
+    color: #0B1F3A;
+    margin-bottom: 5px;
+}
+
+.faculty-card p {
+    color: #64748B;
+}
+
+
+/* ==============================
+   LABORATORIES
+================================= */
+
+.laboratories {
+    background-color: #F3F8FD;
+    text-align: center;
+}
+
+.lab-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.lab-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(11, 31, 58, 0.10);
+    transition: 0.3s;
+}
+
+.lab-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(11, 31, 58, 0.15);
+}
+
+.lab-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.lab-card h3 {
+    color: #0B1F3A;
+    padding: 15px 15px 5px;
+}
+
+.lab-card p {
+    color: #64748B;
+    padding: 0 15px 20px;
+}
+
+
+/* ==============================
+   CONTACT SECTION
+================================= */
+
+.contact {
+    background-color: white;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info {
+    background-color: #F3F8FD;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #1565C0;
+}
+
+.contact-info h3 {
+    color: #0B1F3A;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    color: #4B5563;
+}
+
+.contact-form {
+    background-color: #F1F5F9;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.contact-form h3 {
+    color: #0B1F3A;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #1565C0;
+    box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.12);
+}
+
+.contact-form button {
+    background-color: #1565C0;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #00A6D6;
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+.footer {
+    background-color: #071A2F;
+    color: white;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    padding: 50px 8%;
+}
+
+.footer-about h3,
+.footer-links h3 {
+    margin-bottom: 15px;
+}
+
+.footer-about p {
+    color: #CBD5E1;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    color: #CBD5E1;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00A6D6;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #061525;
+    color: #94A3B8;
+}
+
+
+/* ==============================
+   TABLET RESPONSIVE
+================================= */
+
+@media (max-width: 1000px) {
+
+    .program-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .faculty-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lab-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        height: 250px;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+
+    .program-grid,
+    .faculty-grid,
+    .lab-grid,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 250px;
+    }
+
+    .programs h2,
+    .faculty h2,
+    .laboratories h2,
+    .contact h2 {
+        font-size: 27px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        padding: 40px 5%;
+    }
+}
